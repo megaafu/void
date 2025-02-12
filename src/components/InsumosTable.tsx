@@ -30,10 +30,14 @@ const InsumosTable = () => {
 
   const calculatePackage = (packages: Package[], column: string, filter: "received" | "sent"): number => {
 
-    var total = 0;
+    let total = 0;
     packages.forEach((value) => {
       if (value.name == column) {
-        filter == "received" ? total += Number(value.received) : total += value.sent;
+        if (filter == "received") {
+          total += Number(value.received);
+        } else {
+          total += value.sent;
+        }
       }
     });
     return total;
@@ -53,7 +57,7 @@ const InsumosTable = () => {
                 <th className="p-4 text-center" colSpan={2} key={input}>{input}</th>
               ))}
             </tr>            <tr className="bg-primary text-white text-left">
-              {inputColumns.map((input) => (
+              {inputColumns.map(() => (
                 <>
                   <th className="p-3 text-center">Sent</th>
                   <th className="p-3 text-center">Received</th>

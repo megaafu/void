@@ -1,6 +1,5 @@
 "use client";
 
-import { Package } from "@/entities/Insumos";
 import { useAnalitics } from "@/hooks/useAnalitics";
 
 const AnaliticsTable = () => {
@@ -39,8 +38,8 @@ const AnaliticsTable = () => {
               <th className="p-4 text-center"> Sector</th>
               <th className="p-4 text-center"> Area</th>
               <th className="p-4 text-center" >Tecnico</th>
-              {weeks.map((week, index) => (
-                <th className="p-4 text-center" colSpan={2}>Semana {index}</th>
+              {weeks.map((_, index) => (
+                <th className="p-4 text-center" key={`week${index}`} colSpan={2}>Semana {index}</th>
               ))}
             </tr>
           </thead>

@@ -1,12 +1,10 @@
 "use client";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useRouter } from "next/navigation";
 import { LoginFormValues, loginSchema } from "@/utils/zodSchema";
 import { useAuth } from "@/hooks/useAuth";
 
 const LoginForm = () => {
-  const router = useRouter();
   const {
     register,
     handleSubmit,
