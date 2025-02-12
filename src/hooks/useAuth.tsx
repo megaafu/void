@@ -12,6 +12,7 @@ export const useAuth = () => {
   const loginMutation = useMutation<AuthResponse, Error, LoginFormValues>({
     mutationFn: (data) => login(data.username, data.password),
     onSuccess: (data) => {
+
       localStorage.setItem("token", data.data.token);
       alert("Login bem-sucedido!");
       router.push("/dashboard");
