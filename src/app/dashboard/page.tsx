@@ -8,7 +8,7 @@ export default function Sectores() {
   const [activeTab, setActiveTab] = useState("insumos");
 
   return (
-    <div className="container mx-auto py-6">
+    <div className="container mx-auto py-6 h-screen">
       {/* Tabs Navigation */}
       <div role="tablist" className="tabs tabs-boxed flex justify-center">
         <button

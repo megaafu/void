@@ -40,8 +40,8 @@ const InsumosTable = () => {
   }
 
   return (
-    <div className="container mx-auto h-screen flex flex-col justify-center gap-8">
-      <h3 className="text-3xl font-bold text-gray-800">Insumos</h3>
+    <div className="container mx-auto flex flex-col gap-8">
+      <h3 className="text-3xl font-bold text-gray-200">Insumos</h3>
 
       <div className="overflow-x-auto">
         <table className="table w-full border rounded-lg shadow-md">
