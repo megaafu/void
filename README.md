@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Next.js Project
 
-## Getting Started
+Welcome to my Next.js project! This project is designed using modern technologies and follows best practices to create a clean, maintainable, and scalable application. It uses **Next.js**, **TailwindCSS**, **React Query**, **DaisyUI**, **Zod**, and **Axios** to deliver high-quality user interfaces and efficient data management.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: The framework for building fast, scalable React applications with server-side rendering (SSR) and static site generation (SSG).
+- **TailwindCSS**: A utility-first CSS framework for custom, responsive designs.
+- **React Query**: A powerful data-fetching library for managing server state and caching.
+- **DaisyUI**: A plugin for TailwindCSS providing reusable UI components.
+- **Zod**: TypeScript-first schema validation for strong typing and runtime checks.
+- **Axios**: A promise-based HTTP client for making API requests.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📂 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project follows the **app directory structure** introduced in Next.js. Each folder represents a page and is organized to promote modularity and maintainability.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Key Directories and Their Purpose:
 
-## Learn More
+- **`app/`**: All application routes (pages) are stored here. Each folder represents a page in the application.
+- **`components/`**: Contains reusable TSX components for building the UI. You’ll find all UI elements like buttons, inputs, etc., here.
+- **`entities/`**: Holds the interfaces for API requests. These types define the structure of the data sent and received from the backend, ensuring type safety.
+- **`hooks/`**: Stores React Query hooks for managing data fetching. These hooks abstract away the logic of fetching data and can be reused in multiple places.
+- **`providers/`**: Contains the **React Query provider** setup. This is where the global state for React Query is managed.
+- **`services/`**: Handles API interactions. The service layer uses Axios to fetch or post data from and to external APIs.
+- **`utils/`**: Includes utility functions like **Zod schemas** for validation and **Axios instances** for configuring default settings (e.g., base URL, interceptors).
 
-To learn more about Next.js, take a look at the following resources:
+## 🧰 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Before starting, ensure that you have the following installed:
+- **Node.js** (v14 or higher)
+- **npm** or **yarn**
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   git clone https://github.com/yourusername/your-project-name.git
+   cd your-project-name
